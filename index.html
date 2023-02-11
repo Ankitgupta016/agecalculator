@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Age Calculator</title>
+    <link rel="stylesheet" href="bootstrap/dist/css/bootstrap.min.css">
+    <link rel="stylesheet" href="style.css">
+   
+</head>
+
+<body>
+
+
+    <div class="container">
+        <div class="card m-auto mt-5 bg-black ">
+           <h1 class=" card-title text-center  text-white">Age Calculator</h1>
+            <p>Enter your birthdate:</p>
+            <input type="date" id="birthdate" class="form-control"
+                style="background: none; outline: none; box-shadow: none;" required>
+            <div class="  text-center">
+                <button id="calculate" class="btn btn-outline-success mt-2 mb-2">Calculate</button>
+            </div>
+            <p>You are approximately</p>
+            <ul >
+                <li><span id="output">00</span> year</li>
+                <li><span id="outputMonths">00</span>month</li>
+                <li><span id="outputDays">00</span>Days</li>
+                <li><span id="outputHours">00</span>hourss</li>
+                <li><span id="outputminutes">00</span>minutes</li>
+                <li><span id="outputseconds">00</span>seconds</li>
+            </ul>
+        </div>
+    </div>
+<script src="index.js"></script>
+</body>
+
+</html>
