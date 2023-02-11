@@ -12,11 +12,11 @@ const calculate = document.getElementById("calculate");
             const ageInDays = ageInHours / 24;
             const ageInYears = ageInDays / 365;
             const ageInMonths = ageInDays / 30;
-            output.innerHTML = Math.round(ageInYears);
-            outputMonths.innerHTML = Math.round(ageInMonths % 12);
-            outputDays.innerHTML = Math.round(ageInDays);
-            outputHours.innerHTML = Math.round(ageInHours)
-            outputminutes.innerHTML = Math.round(ageInMinutes);
-            outputseconds.innerHTML = Math.round(ageInSeconds);
+            output.innerHTML = Math.floor(ageInYears);
+            outputMonths.innerHTML = Math.floor(ageInMonths % 12);
+            outputDays.innerHTML = Math.floor(ageInDays);
+            outputHours.innerHTML = Math.floor(ageInHours)
+            outputminutes.innerHTML = Math.floor(ageInMinutes);
+            outputseconds.innerHTML = Math.floor(ageInSeconds);
         });
     
